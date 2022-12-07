@@ -6,7 +6,7 @@ First I wan you to go to this website wich is `https://developer.android.com/tra
 
 You should something like this or similar to the screenshot below, with a code editor in the middle.
 
-![Kotlin Compiler](/Introduction/img/kotlin-web-compiler.png)
+![Kotlin Compiler](/Unit%3A1/Introduction/img/kotlin-web-compiler.png)
 
 The editor comes with a code `println("Hello, world!")` that is inside the main function we'll explain later what is the purpose of the main function.
 
