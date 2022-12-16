@@ -27,7 +27,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/grid_dog_img"
+            android:id="@+id/dog_image"
             android:layout_width="0dp"
             android:layout_height="194dp"
             android:scaleType="centerCrop"
@@ -37,7 +37,7 @@
             tools:srcCompat="@drawable/leroy" />
 
         <TextView
-            android:id="@+id/grid_dog_name"
+            android:id="@+id/dog_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -46,31 +46,31 @@
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/grid_dog_img"
+            app:layout_constraintTop_toBottomOf="@+id/dog_image"
             tools:text="Leroy" />
 
         <TextView
-            android:id="@+id/grid_dog_age"
+            android:id="@+id/dog_age"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            app:layout_constraintEnd_toEndOf="@+id/grid_dog_name"
-            app:layout_constraintStart_toStartOf="@id/grid_dog_name"
-            app:layout_constraintTop_toBottomOf="@+id/grid_dog_name"
+            app:layout_constraintEnd_toEndOf="@+id/dog_name"
+            app:layout_constraintStart_toStartOf="@id/dog_name"
+            app:layout_constraintTop_toBottomOf="@+id/dog_name"
             tools:text="Age: 4" />
 
         <TextView
-            android:id="@+id/grid_dog_hobbies"
+            android:id="@+id/dog_hobbies"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="8dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/grid_dog_name"
-            app:layout_constraintStart_toStartOf="@id/grid_dog_name"
-            app:layout_constraintTop_toBottomOf="@id/grid_dog_age"
+            app:layout_constraintEnd_toEndOf="@+id/dog_name"
+            app:layout_constraintStart_toStartOf="@id/dog_name"
+            app:layout_constraintTop_toBottomOf="@id/dog_age"
             tools:text="sleeping in dangerous places" />
 
 
