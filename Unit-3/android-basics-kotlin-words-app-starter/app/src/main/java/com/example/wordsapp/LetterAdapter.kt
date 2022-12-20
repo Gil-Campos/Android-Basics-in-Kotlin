@@ -15,6 +15,7 @@
  */
 package com.example.wordsapp
 
+import android.content.Intent
 import android.os.Build
 import android.view.LayoutInflater
 import android.view.View
@@ -49,8 +50,8 @@ class LetterAdapter :
      */
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LetterViewHolder {
         val layout = LayoutInflater
-                .from(parent.context)
-                .inflate(R.layout.item_view, parent, false)
+            .from(parent.context)
+            .inflate(R.layout.item_view, parent, false)
         // Setup custom accessibility delegate to set the text read
         layout.accessibilityDelegate = Accessibility
         return LetterViewHolder(layout)
@@ -60,8 +61,17 @@ class LetterAdapter :
      * Replaces the content of an existing view with new data
      */
     override fun onBindViewHolder(holder: LetterViewHolder, position: Int) {
-        val item = list.get(position)
+        val item = list[position]
         holder.button.text = item.toString()
+        holder.button.setOnClickListener {
+            val context = holder.itemView.context
+            // First we create an intent to the activity we want to go
+            val intent = Intent(context, DetailActivity::class.java)
+            // The putExtra is for sending data over the intent
+            intent.putExtra(DetailActivity.LETTER, holder.button.text.toString())
+            // This calls the activity we need and we pass the data with the previous putExtra
+            context.startActivity(intent)
+        }
     }
 
     // Setup custom accessibility delegate to set the text read with
