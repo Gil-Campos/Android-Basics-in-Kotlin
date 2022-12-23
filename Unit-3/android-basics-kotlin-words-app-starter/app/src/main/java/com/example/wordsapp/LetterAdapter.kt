@@ -68,7 +68,7 @@ class LetterAdapter :
             // First we create an intent to the activity we want to go
             val intent = Intent(context, DetailActivity::class.java)
             // The putExtra is for sending data over the intent
-            intent.putExtra(DetailActivity.LETTER, holder.button.text.toString())
+            intent.putExtra(WordListFragment.LETTER, holder.button.text.toString())
             // This calls the activity we need and we pass the data with the previous putExtra
             context.startActivity(intent)
         }
