@@ -23,6 +23,8 @@ plugins {
 android {
     compileSdkVersion 33
 
+    namespace 'com.example.android.unscramble'
+
     defaultConfig {
         applicationId "com.example.android.unscramble"
         minSdkVersion 23
@@ -49,7 +51,6 @@ android {
     buildFeatures {
         viewBinding true
     }
-    namespace 'com.example.android.unscramble'
 }
 
 dependencies {
