@@ -46,6 +46,7 @@ class PickupFragment : Fragment() {
         binding = fragmentBinding
         binding?.apply {
             viewModel = sharedViewModel
+            lifecycleOwner = viewLifecycleOwner
         }
         return fragmentBinding.root
     }
@@ -54,7 +55,9 @@ class PickupFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding?.apply {
-            nextButton.setOnClickListener { goToNextScreen() }
+            lifecycleOwner = viewLifecycleOwner
+            viewModel = sharedViewModel
+            pickupFragment = this@PickupFragment
         }
     }
 

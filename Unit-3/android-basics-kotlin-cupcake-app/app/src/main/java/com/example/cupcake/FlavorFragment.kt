@@ -46,6 +46,7 @@ class FlavorFragment : Fragment() {
         binding = fragmentBinding
         binding?.apply {
             viewModel = sharedViewModel
+            lifecycleOwner = viewLifecycleOwner
         }
         return fragmentBinding.root
     }
@@ -54,7 +55,9 @@ class FlavorFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding?.apply {
-            nextButton.setOnClickListener { goToNextScreen() }
+            lifecycleOwner = viewLifecycleOwner
+            viewModel = sharedViewModel
+            flavorFragment = this@FlavorFragment
         }
     }
 
