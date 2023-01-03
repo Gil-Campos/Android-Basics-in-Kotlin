@@ -40,6 +40,8 @@ class OrderFunctionalityTests : BaseTest() {
      *
      * It isn't necessarily best practice to make all these assertions in a single test,
      * however, it is done here for improved readability of the file.
+     *
+     * If you run this with all the other test cases at once will fail, test the case by itself
      */
     @Test
     fun `radio_buttons_update_entree_menu_subtotal`() {
@@ -104,6 +106,8 @@ class OrderFunctionalityTests : BaseTest() {
      *
      * It isn't necessarily best practice to make all these assertions in a single test,
      * however, it is done here for improved readability of the file.
+     *
+     * If you run this with all the other test cases at once will fail, test the case by itself
      */
     @Test
     fun `radio_buttons_update_accompaniment_menu_subtotal`() {
