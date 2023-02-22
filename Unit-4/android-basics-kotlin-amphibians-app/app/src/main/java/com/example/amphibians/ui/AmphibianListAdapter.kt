@@ -32,7 +32,7 @@ class AmphibianListAdapter(val clickListener: AmphibianListener) :
 
     class AmphibianViewHolder(
         var binding: ListViewItemBinding
-        ) : RecyclerView.ViewHolder(binding.root){
+    ) : RecyclerView.ViewHolder(binding.root) {
         fun bind(clickListener: AmphibianListener, amphibian: Amphibian) {
             binding.amphibian = amphibian
             binding.clickListener = clickListener
