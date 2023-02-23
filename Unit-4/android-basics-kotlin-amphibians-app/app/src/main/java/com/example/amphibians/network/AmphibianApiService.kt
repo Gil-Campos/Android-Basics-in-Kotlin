@@ -38,7 +38,7 @@ interface AmphibianApiService {
     suspend fun getAmphibiansList(): List<Amphibian>
 }
 
-object AmphiphianApi {
+object AmphibianApi {
     val retrofitService: AmphibianApiService by lazy {
         retrofit.create(AmphibianApiService::class.java)
     }
